@@ -27,6 +27,9 @@ html {
     overflow-x: hidden;
     background: hsl(0, 26%, 96%);
 }
+li{
+    list-style: none;
+}
 .header{
     width: 100%;
     height: 100vh;
@@ -39,21 +42,18 @@ html {
     background-color: var(--Light-red);
     background-repeat: no-repeat;
 }
-.header .nav{
+.header .nav, .nav-list{
     display: flex;
     align-items: center;
     
 }
 .header .nav .nav-list{
-    display: flex;
     flex: 1;
-    align-items: center;
     margin-left: 3.5rem;
 
 }
 .header .nav .nav-list li {
     margin-right: 1.5rem;
-    list-style: none;
     position: relative;
 }
 .header .nav .nav-list li a{
@@ -61,7 +61,6 @@ html {
     color: hsl(0, 0%, 100%);
     cursor: pointer;
     transition: 1s;
-    font-family: 'Ubuntu', sans-serif;
 }
 .header .nav .nav-list li a:hover{
     text-decoration: underline;
@@ -109,10 +108,8 @@ html {
 .register{
     display: flex;
     align-items: center;
-    
 }
 .register li{
-    list-style: none;
     margin-left: 2rem;
 }
 .register li a{
@@ -133,10 +130,6 @@ html {
 .register li .Sign-Up:hover, .start:hover{
     background: var(--Very-light-red);
     color: hsl(0, 0%, 100%);
-}
-.register li .Login:hover, .learn:hover{
-    background: hsl(0, 0%, 100%);
-    color: var(--Very-light-red);
 }
 .header .nav #mobilemenu, .mobilenav{
     display: none;
@@ -167,7 +160,6 @@ html {
     align-items: center;
 }
 .header .top-header-content .top-header-content-links li{
-    list-style: none;
     margin: .5rem;
 }
 .header .top-header-content .top-header-content-links li a{
@@ -176,7 +168,6 @@ html {
     cursor: pointer;
     font-size: .9rem;
     font-weight: 700;
-
 }
 .header .top-header-content .top-header-content-links li .learn{
     background: transparent;
@@ -188,4 +179,122 @@ html {
 .header .top-header-content .top-header-content-links li .learn:hover{
     background: hsl(0, 0%, 100%);
     color:var(--Very-light-red) ;
+}
+.Body-description, .services, .features{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10rem 0 3rem 10rem;
+    z-index: 2;
+}
+.Body-description h2{
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 700;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: -4rem;
+    color: var(--Very-dark-blue);
+}
+.Body-description .Body-description-parts, .services, .features{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    
+}
+.Body-description .Body-description-parts-leftcolumn, .services-leftcolumn, .features-rightcolumn{
+    flex-basis: 50%;
+}
+.Body-description .Body-description-parts-leftcolumn h3, .services-rightcolumn h4, .features-rightcolumn h5{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--Very-dark-blue) ;
+    margin: 2.5rem 0rem;
+}
+.mobile-illustration{
+    display: none;
+}
+.Body-description .Body-description-parts .Body-description-parts-leftcolumn p, .services-rightcolumn p, .features-rightcolumn p{
+    font-size: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+.services-rightcolumn h4, .services-rightcolumn p{
+    color: hsl(0, 0%, 100%);
+    line-height: 1.9rem;
+    margin: 0 10rem 1rem 3rem;
+}
+.Body-description .Body-description-parts .Body-description-parts-rightcolumn, .features-leftcolumn{
+    position: relative;
+    flex-basis: 50%;
+}
+.Body-description .Body-description-parts .Body-description-parts-rightcolumn .desktop-editor, .desktop-illustration{
+    position: relative;
+    width: 150%;
+}
+.desktop-illustration{
+    left: -18rem;
+}
+.features-rightcolumn p, .Body-description-parts-leftcolumn p{
+    line-height: 2rem;
+    margin-right: 5rem;
+}
+.Body-description .Body-description-parts .Body-description-parts-rightcolumn .mobile-editor{
+   display: none;
+}
+.services{
+    background-color: var(--Very-dark-gray-blue);
+    border-radius: 0 6rem 0 6rem;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.services-leftcolumn{
+    flex-basis: 40%;
+    position: relative;
+    background-image: url(images/illustration-phones.svg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20rem;
+}
+.services .services-leftcolumn .phone {
+    position: absolute;
+    left: -1rem;
+    top: -16rem;
+    z-index: 3;
+}
+.services .services-leftcolumn .circle-pattern {
+    position: absolute;
+    left: -8rem;
+    top: -30rem;
+    z-index: 1;
+    width: 350%;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Very-dark-black-blue-footer-background);
+    margin: 4rem 0 0 0;
+    padding: 4rem 1rem ;
+    border-radius: 0 6rem 0 0;
+    color:hsl(0, 0%, 100%); 
+}
+.footer h6{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Overpass', 'sansrif' ;
+}
+.footer a{
+    text-decoration: none;
+    color:var(--Grayish-blue-footer-text);
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer li{
+    line-height: 1.9rem; 
 }
