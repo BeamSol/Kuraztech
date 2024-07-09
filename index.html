@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Blogr Landing Page</title>
-
+  <script src="script.js"></script>
 </head>
 <body>
   <section class="header">
@@ -46,7 +46,7 @@
         <li><a href="#" class="Login">Login</a></li>
         <li><a href="#" class="Sign-Up">Sign Up</a></li>
       </ul>
-      <img src="images/icon-hamburger.svg" alt="hamburger" id="mobilemenu">
+      <img src="images/icon-hamburger.svg" alt="hamburger" id="mobilemenu" onclick="btn_onclick()">
     </div>
     <div class="top-header-content">
       <h1>A modern publishing platform</h1>
@@ -104,9 +104,10 @@
           </ul>
         </div>
       </li>
-
-      <li><a href="#">Login</a></li>
-      <li class="signup"><a href="#">Sign Up</a></li>
+      <div class="select">
+        <li><a href="#">Login</a></li>
+        <li class="signup"><a href="#">Sign Up</a></li>
+      </div>
     </ul>
   </div>
   <section class="Body-description">
@@ -134,8 +135,8 @@
   </section>
   <section class="services">
     <div class="services-leftcolumn">
+      <img src="images/bg-pattern-circles.svg" alt="circle pattern" id="circle-pattern"class="circle-pattern">
       <img src="images/illustration-phones.svg" alt="phone illustration" class="phone">
-      <img src="images/bg-pattern-circles.svg" alt="circle pattern" class="circle-pattern">
     </div>
     <div class="services-rightcolumn">
       <h4>State of the Art Infrastructure</h4>
