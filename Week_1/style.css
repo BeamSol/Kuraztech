@@ -26,6 +26,7 @@ body,
 html {
     overflow-x: hidden;
     background: hsl(0, 26%, 96%);
+    
 }
 li{
     list-style: none;
@@ -492,12 +493,17 @@ li{
     .Body-description .Body-description-parts .Body-description-parts-leftcolumn p {
         font-size: 1.1rem;
         margin-bottom: 3rem;
+        margin-right: 0;
     }
     .services {
         padding: 8rem 2rem;
         flex-wrap: wrap;
-        background-image: none;
-        justify-content: space-between;
+        background-position-x: -70px ;
+        background-position-y:-300px;
+        background-size: 125% ; 
+        background-image: url(images/bg-pattern-circles.svg);
+        background-repeat: no-repeat;
+
     }
 
     .services .services-rightcolumn {
@@ -549,11 +555,16 @@ li{
     .features .features-rightcolumn h5 {
         font-size: 1.7rem;
     }
+    .features .features-rightcolumn p{
+        margin-right: 0;
+    }
     .footer {
         padding: 4rem 0 6rem;
         flex-wrap: wrap;
     }
-
+    .footer a{
+        margin-bottom: 4rem;
+    }
     .footer .footer-box {
         flex-basis: 100%;
         text-align: center;
