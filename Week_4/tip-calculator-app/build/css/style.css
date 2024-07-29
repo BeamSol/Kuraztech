@@ -602,8 +602,8 @@ video {
   margin-right: auto;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-6 {
@@ -630,8 +630,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -640,6 +648,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-2\/3 {
@@ -658,12 +670,30 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-3 {
   gap: 0.75rem;
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-3xl {
@@ -786,6 +816,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -798,6 +833,10 @@ video {
   line-height: 1.5;
 }
 
+.leading-3 {
+  line-height: .75rem;
+}
+
 .tracking-ultra-wide {
   letter-spacing: 0.7rem;
 }
@@ -808,6 +847,11 @@ video {
 
 .text-grayishCyan {
   color: var(--GrayishCyan);
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-strongCyan {
@@ -824,6 +868,11 @@ video {
 
 .text-white {
   color: var(--White);
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-center::-moz-placeholder {
@@ -893,10 +942,6 @@ video {
     display: grid;
   }
 
-  .md\:h-2\/3 {
-    height: 66.666667%;
-  }
-
   .md\:min-h-screen {
     min-height: 100vh;
   }
@@ -915,10 +960,6 @@ video {
 
   .md\:flex-col {
     flex-direction: column;
-  }
-
-  .md\:place-content-center {
-    place-content: center;
   }
 
   .md\:items-center {
